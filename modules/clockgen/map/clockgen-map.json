@@ -1,0 +1,106 @@
+{
+ "module": "sceClockgen_Driver",
+ "entry": 692,
+ "libs": [
+  {
+   "name": "syslib",
+   "funcs": [
+    {
+     "nid": "D632ACDB",
+     "name": "module_start",
+     "addr": 692
+    },
+    {
+     "nid": "2F064FA6",
+     "name": "module_reboot_before",
+     "addr": 800
+    }
+   ]
+  },
+  {
+   "name": "sceClockgen_driver",
+   "funcs": [
+    {
+     "nid": "0FD28D8B",
+     "name": "sceClockgenGetRegValue",
+     "addr": 1108
+    },
+    {
+     "nid": "29160F5D",
+     "name": "sceClockgenInit",
+     "addr": 920
+    },
+    {
+     "nid": "36F9B49D",
+     "name": "sceClockgenEnd",
+     "addr": 1004
+    },
+    {
+     "nid": "3F6B7C6B",
+     "name": "sceClockgenSetProtocol",
+     "addr": 1080
+    },
+    {
+     "nid": "50F22765",
+     "name": "sceClockgenSetup",
+     "addr": 0
+    },
+    {
+     "nid": "7FF82F6F",
+     "name": "sceClockgenLeptonClkEnable",
+     "addr": 1276
+    },
+    {
+     "nid": "A1D23B2C",
+     "name": "sceClockgenAudioClkEnable",
+     "addr": 1212
+    },
+    {
+     "nid": "C9AF3102",
+     "name": "sceClockgenSetSpectrumSpreading",
+     "addr": 248
+    },
+    {
+     "nid": "CE36529C",
+     "name": "sceClockgenGetRevision",
+     "addr": 1096
+    },
+    {
+     "nid": "DAB6E612",
+     "name": "sceClockgenAudioClkSetFreq",
+     "addr": 1148
+    },
+    {
+     "nid": "DBE5F283",
+     "name": "sceClockgenLeptonClkDisable",
+     "addr": 1308
+    },
+    {
+     "nid": "DED4C698",
+     "name": "sceClockgenAudioClkDisable",
+     "addr": 1244
+    }
+   ]
+  },
+  {
+   "name": "internals",
+   "funcs": [
+    {
+     "nid": "00000000",
+     "name": "_sceClockgenSysEventHandler",
+     "addr": 1340
+    },
+    {
+     "nid": "00000000",
+     "name": "_sceClockgenSetControl1",
+     "addr": 1500
+    },
+    {
+     "nid": "00000000",
+     "name": "_cy27040_write_register",
+     "addr": 1664
+    }
+   ]
+  }
+ ]
+}

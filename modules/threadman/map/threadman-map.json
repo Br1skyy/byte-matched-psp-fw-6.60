@@ -1,0 +1,1516 @@
+{
+ "module": "sceThreadManager",
+ "entry": 73576,
+ "libs": [
+  {
+   "name": "ThreadManForUser",
+   "funcs": [
+    {
+     "nid": "034A921F",
+     "name": "sceKernelGetVTimerTime",
+     "addr": 62844
+    },
+    {
+     "nid": "0C106E53",
+     "name": "sceKernelRegisterThreadEventHandler",
+     "addr": 4416
+    },
+    {
+     "nid": "0D81716A",
+     "name": "sceKernelPollMbx",
+     "addr": 36288
+    },
+    {
+     "nid": "0DDCD2C9",
+     "name": "sceKernelTryLockMutex",
+     "addr": 28244
+    },
+    {
+     "nid": "0E927AED",
+     "name": "_sceKernelReturnFromTimerHandler",
+     "addr": 68192
+    },
+    {
+     "nid": "110DEC9A",
+     "name": "sceKernelUSec2SysClock",
+     "addr": 60596
+    },
+    {
+     "nid": "1181E963",
+     "name": "sceKernelDelaySysClockThreadCB",
+     "addr": 16292
+    },
+    {
+     "nid": "17C1684E",
+     "name": "sceKernelReferThreadStatus",
+     "addr": 89092
+    },
+    {
+     "nid": "18260574",
+     "name": "sceKernelReceiveMbx",
+     "addr": 35432
+    },
+    {
+     "nid": "19CFF145",
+     "name": "sceKernelCreateLwMutex",
+     "addr": 30424
+    },
+    {
+     "nid": "1AF94D03",
+     "name": "sceKernelDonateWakeupThread",
+     "addr": 13116
+    },
+    {
+     "nid": "1D371B8A",
+     "name": "sceKernelCancelVpl",
+     "addr": 48892
+    },
+    {
+     "nid": "1FB15A32",
+     "name": "sceKernelSetEventFlag",
+     "addr": 21440
+    },
+    {
+     "nid": "20FFF560",
+     "name": "sceKernelCreateVTimer",
+     "addr": 61636
+    },
+    {
+     "nid": "278C0DF5",
+     "name": "sceKernelWaitThreadEnd",
+     "addr": 15040
+    },
+    {
+     "nid": "27E22EC2",
+     "name": "sceKernelResumeDispatchThread",
+     "addr": 82496
+    },
+    {
+     "nid": "28B6489C",
+     "name": "sceKernelDeleteSema",
+     "addr": 17348
+    },
+    {
+     "nid": "28BFD974",
+     "name": "ThreadManForUser_28BFD974",
+     "addr": 86060
+    },
+    {
+     "nid": "293B45B8",
+     "name": "sceKernelGetThreadId",
+     "addr": 93612
+    },
+    {
+     "nid": "2A3D44FF",
+     "name": "sceKernelGetCallbackCount",
+     "addr": 8056
+    },
+    {
+     "nid": "2C34E053",
+     "name": "sceKernelReleaseWaitThread",
+     "addr": 85024
+    },
+    {
+     "nid": "30FD48F0",
+     "name": "sceKernelPollEventFlag",
+     "addr": 23408
+    },
+    {
+     "nid": "31327F19",
+     "name": "_sceKernelLockLwMutexCB",
+     "addr": 31964
+    },
+    {
+     "nid": "328C546A",
+     "name": "sceKernelWaitEventFlagCB",
+     "addr": 22328
+    },
+    {
+     "nid": "328F9E52",
+     "name": "sceKernelDeleteVTimer",
+     "addr": 61908
+    },
+    {
+     "nid": "32BF938E",
+     "name": "sceKernelDeleteTlspl",
+     "addr": 55824
+    },
+    {
+     "nid": "33BE4024",
+     "name": "sceKernelReferMsgPipeStatus",
+     "addr": 44496
+    },
+    {
+     "nid": "349B864D",
+     "name": "sceKernelCancelMsgPipe",
+     "addr": 44064
+    },
+    {
+     "nid": "349D6D6C",
+     "name": "sceKernelCheckCallback",
+     "addr": 8312
+    },
+    {
+     "nid": "369ED59D",
+     "name": "sceKernelGetSystemTimeLow",
+     "addr": 68904
+    },
+    {
+     "nid": "369EEB6B",
+     "name": "sceKernelReferThreadEventHandlerStatus",
+     "addr": 6144
+    },
+    {
+     "nid": "383F7BCC",
+     "name": "sceKernelTerminateDeleteThread",
+     "addr": 81208
+    },
+    {
+     "nid": "39810265",
+     "name": "sceKernelReferVplStatus",
+     "addr": 49204
+    },
+    {
+     "nid": "3AD58B8C",
+     "name": "sceKernelSuspendDispatchThread",
+     "addr": 81972
+    },
+    {
+     "nid": "3B183E26",
+     "name": "sceKernelGetThreadExitStatus",
+     "addr": 85520
+    },
+    {
+     "nid": "3F53E640",
+     "name": "sceKernelSignalSema",
+     "addr": 17624
+    },
+    {
+     "nid": "402FCF22",
+     "name": "sceKernelWaitEventFlag",
+     "addr": 22320
+    },
+    {
+     "nid": "446D8DE6",
+     "name": "sceKernelCreateThread",
+     "addr": 77048
+    },
+    {
+     "nid": "4A719FB2",
+     "name": "sceKernelFreeTlspl",
+     "addr": 57032
+    },
+    {
+     "nid": "4C145944",
+     "name": "sceKernelReferLwMutexStatusByID",
+     "addr": 33472
+    },
+    {
+     "nid": "4E3A1105",
+     "name": "sceKernelWaitSema",
+     "addr": 18252
+    },
+    {
+     "nid": "52089CA1",
+     "name": "sceKernelGetThreadStackFreeSize",
+     "addr": 88360
+    },
+    {
+     "nid": "532A522E",
+     "name": "_sceKernelExitThread",
+     "addr": 93492
+    },
+    {
+     "nid": "53B00E9A",
+     "name": "sceKernelSetVTimerHandlerWide",
+     "addr": 66616
+    },
+    {
+     "nid": "542AD630",
+     "name": "sceKernelSetVTimerTime",
+     "addr": 63604
+    },
+    {
+     "nid": "55C20A00",
+     "name": "sceKernelCreateEventFlag",
+     "addr": 20792
+    },
+    {
+     "nid": "56C039B5",
+     "name": "sceKernelCreateVpl",
+     "addr": 46156
+    },
+    {
+     "nid": "57CF62DD",
+     "name": "sceKernelGetThreadmanIdType",
+     "addr": 92036
+    },
+    {
+     "nid": "58B1F937",
+     "name": "sceKernelPollSema",
+     "addr": 18996
+    },
+    {
+     "nid": "5BF4DD27",
+     "name": "sceKernelLockMutexCB",
+     "addr": 27252
+    },
+    {
+     "nid": "5F32BEAA",
+     "name": "sceKernelReferVTimerStatus",
+     "addr": 67624
+    },
+    {
+     "nid": "60107536",
+     "name": "sceKernelDeleteLwMutex",
+     "addr": 30984
+    },
+    {
+     "nid": "616403BA",
+     "name": "sceKernelTerminateThread",
+     "addr": 80832
+    },
+    {
+     "nid": "623AE665",
+     "name": "sceKernelTryAllocateFpl",
+     "addr": 52252
+    },
+    {
+     "nid": "627E6F3A",
+     "name": "sceKernelReferSystemStatus",
+     "addr": 94536
+    },
+    {
+     "nid": "64D4540E",
+     "name": "sceKernelReferThreadProfiler",
+     "addr": 94768
+    },
+    {
+     "nid": "65F54FFB",
+     "name": "_sceKernelAllocateTlspl",
+     "addr": 56336
+    },
+    {
+     "nid": "6652B8CA",
+     "name": "sceKernelSetAlarm",
+     "addr": 69108
+    },
+    {
+     "nid": "68DA9E36",
+     "name": "sceKernelDelayThreadCB",
+     "addr": 15744
+    },
+    {
+     "nid": "6B30100F",
+     "name": "sceKernelUnlockMutex",
+     "addr": 26612
+    },
+    {
+     "nid": "6D212BAC",
+     "name": "sceKernelWaitSemaCB",
+     "addr": 18260
+    },
+    {
+     "nid": "6E9EA350",
+     "name": "_sceKernelReturnFromCallback",
+     "addr": 9532
+    },
+    {
+     "nid": "71040D5C",
+     "name": "_sceKernelTryLockLwMutex",
+     "addr": 32916
+    },
+    {
+     "nid": "71BC9871",
+     "name": "sceKernelChangeThreadPriority",
+     "addr": 84052
+    },
+    {
+     "nid": "721067F3",
+     "name": "sceKernelReferTlsplStatus",
+     "addr": 57916
+    },
+    {
+     "nid": "72F3C145",
+     "name": "sceKernelReleaseThreadEventHandler",
+     "addr": 5180
+    },
+    {
+     "nid": "730ED8BC",
+     "name": "sceKernelReferCallbackStatus",
+     "addr": 9092
+    },
+    {
+     "nid": "74829B76",
+     "name": "sceKernelReceiveMsgPipe",
+     "addr": 41380
+    },
+    {
+     "nid": "75156E8F",
+     "name": "sceKernelResumeThread",
+     "addr": 14224
+    },
+    {
+     "nid": "7C0DC2A0",
+     "name": "sceKernelCreateMsgPipe",
+     "addr": 37992
+    },
+    {
+     "nid": "7C41F2C2",
+     "name": "sceKernelSendMsgPipeCB",
+     "addr": 38872
+    },
+    {
+     "nid": "7CFF8CF3",
+     "name": "_sceKernelLockLwMutex",
+     "addr": 31956
+    },
+    {
+     "nid": "7E65B999",
+     "name": "sceKernelCancelAlarm",
+     "addr": 60708
+    },
+    {
+     "nid": "809CE29B",
+     "name": "sceKernelExitDeleteThread",
+     "addr": 80580
+    },
+    {
+     "nid": "812346E4",
+     "name": "sceKernelClearEventFlag",
+     "addr": 22040
+    },
+    {
+     "nid": "8125221D",
+     "name": "sceKernelCreateMbx",
+     "addr": 34384
+    },
+    {
+     "nid": "8218B4DD",
+     "name": "sceKernelReferGlobalProfiler",
+     "addr": 94844
+    },
+    {
+     "nid": "82826F70",
+     "name": "sceKernelSleepThreadCB",
+     "addr": 12016
+    },
+    {
+     "nid": "82BC5777",
+     "name": "sceKernelGetSystemTimeWide",
+     "addr": 68760
+    },
+    {
+     "nid": "840E8133",
+     "name": "sceKernelWaitThreadEndCB",
+     "addr": 15048
+    },
+    {
+     "nid": "86255ADA",
+     "name": "sceKernelDeleteMbx",
+     "addr": 34728
+    },
+    {
+     "nid": "8672E3D0",
+     "name": "ThreadManForKernel_8672E3D0",
+     "addr": 10028
+    },
+    {
+     "nid": "876DBFAD",
+     "name": "sceKernelSendMsgPipe",
+     "addr": 38864
+    },
+    {
+     "nid": "87D4DD36",
+     "name": "sceKernelCancelReceiveMbx",
+     "addr": 36848
+    },
+    {
+     "nid": "87D9223C",
+     "name": "sceKernelCancelMutex",
+     "addr": 28764
+    },
+    {
+     "nid": "884C9F90",
+     "name": "sceKernelTrySendMsgPipe",
+     "addr": 40316
+    },
+    {
+     "nid": "89B3D48C",
+     "name": "sceKernelDeleteVpl",
+     "addr": 46784
+    },
+    {
+     "nid": "8DAFF657",
+     "name": "sceKernelCreateTlspl",
+     "addr": 54644
+    },
+    {
+     "nid": "8FFDF9A2",
+     "name": "sceKernelCancelSema",
+     "addr": 19404
+    },
+    {
+     "nid": "912354A7",
+     "name": "sceKernelRotateThreadReadyQueue",
+     "addr": 84540
+    },
+    {
+     "nid": "94416130",
+     "name": "sceKernelGetThreadmanIdList",
+     "addr": 91104
+    },
+    {
+     "nid": "94AA61EE",
+     "name": "sceKernelGetThreadCurrentPriority",
+     "addr": 93732
+    },
+    {
+     "nid": "9944F31F",
+     "name": "sceKernelSuspendThread",
+     "addr": 13692
+    },
+    {
+     "nid": "9ACE131E",
+     "name": "sceKernelSleepThread",
+     "addr": 11760
+    },
+    {
+     "nid": "9FA03CD3",
+     "name": "sceKernelDeleteThread",
+     "addr": 78516
+    },
+    {
+     "nid": "A1F78052",
+     "name": "_sceKernelReturnFromChangeStack",
+     "addr": 85776
+    },
+    {
+     "nid": "A66B0120",
+     "name": "sceKernelReferEventFlagStatus",
+     "addr": 24336
+    },
+    {
+     "nid": "A8AA591F",
+     "name": "sceKernelCancelFpl",
+     "addr": 53216
+    },
+    {
+     "nid": "A8E8C846",
+     "name": "sceKernelReferMbxStatus",
+     "addr": 37160
+    },
+    {
+     "nid": "A9C2CB9A",
+     "name": "sceKernelReferMutexStatus",
+     "addr": 29272
+    },
+    {
+     "nid": "AA73C935",
+     "name": "sceKernelExitThread",
+     "addr": 80328
+    },
+    {
+     "nid": "AF36D708",
+     "name": "sceKernelTryAllocateVpl",
+     "addr": 47892
+    },
+    {
+     "nid": "B011B11F",
+     "name": "sceKernelLockMutex",
+     "addr": 27244
+    },
+    {
+     "nid": "B2C25152",
+     "name": "sceKernelSetSysClockAlarm",
+     "addr": 69308
+    },
+    {
+     "nid": "B3A59970",
+     "name": "sceKernelGetVTimerBase",
+     "addr": 62184
+    },
+    {
+     "nid": "B736E9FF",
+     "name": "sceKernelFreeVpl",
+     "addr": 48308
+    },
+    {
+     "nid": "B7C18B77",
+     "name": "sceKernelGetVTimerBaseWide",
+     "addr": 62544
+    },
+    {
+     "nid": "B7D098C6",
+     "name": "sceKernelCreateMutex",
+     "addr": 25220
+    },
+    {
+     "nid": "BA4051D6",
+     "name": "sceKernelCancelCallback",
+     "addr": 7796
+    },
+    {
+     "nid": "BA6B92E2",
+     "name": "sceKernelSysClock2USec",
+     "addr": 68212
+    },
+    {
+     "nid": "BC6FEBC5",
+     "name": "sceKernelReferSemaStatus",
+     "addr": 19952
+    },
+    {
+     "nid": "BC80EC7C",
+     "name": "sceKernelExtendThreadStack",
+     "addr": 86316
+    },
+    {
+     "nid": "BD123D9E",
+     "name": "sceKernelDelaySysClockThread",
+     "addr": 16284
+    },
+    {
+     "nid": "BED27435",
+     "name": "sceKernelAllocateVpl",
+     "addr": 47060
+    },
+    {
+     "nid": "BEED3A47",
+     "name": "_sceKernelUnlockLwMutex",
+     "addr": 31324
+    },
+    {
+     "nid": "C07BB470",
+     "name": "sceKernelCreateFpl",
+     "addr": 50184
+    },
+    {
+     "nid": "C0B3FFD2",
+     "name": "sceKernelGetVTimerTimeWide",
+     "addr": 63260
+    },
+    {
+     "nid": "C11BA8C4",
+     "name": "sceKernelNotifyCallback",
+     "addr": 7360
+    },
+    {
+     "nid": "C68D9437",
+     "name": "sceKernelStartVTimer",
+     "addr": 64948
+    },
+    {
+     "nid": "C8CD158C",
+     "name": "sceKernelUSec2SysClockWide",
+     "addr": 68200
+    },
+    {
+     "nid": "CD203292",
+     "name": "sceKernelCancelEventFlag",
+     "addr": 23988
+    },
+    {
+     "nid": "CEADEB47",
+     "name": "sceKernelDelayThread",
+     "addr": 15736
+    },
+    {
+     "nid": "D0AEEE87",
+     "name": "sceKernelStopVTimer",
+     "addr": 65468
+    },
+    {
+     "nid": "D13BDE95",
+     "name": "sceKernelCheckThreadStack",
+     "addr": 88008
+    },
+    {
+     "nid": "D2D615EF",
+     "name": "sceKernelCancelVTimerHandler",
+     "addr": 67256
+    },
+    {
+     "nid": "D59EAD2F",
+     "name": "sceKernelWakeupThread",
+     "addr": 12368
+    },
+    {
+     "nid": "D6DA4BA1",
+     "name": "sceKernelCreateSema",
+     "addr": 16968
+    },
+    {
+     "nid": "D8199E4C",
+     "name": "sceKernelReferFplStatus",
+     "addr": 53528
+    },
+    {
+     "nid": "D8B299AE",
+     "name": "sceKernelSetVTimerHandler",
+     "addr": 65940
+    },
+    {
+     "nid": "D979E9BF",
+     "name": "sceKernelAllocateFpl",
+     "addr": 51520
+    },
+    {
+     "nid": "DAA3F564",
+     "name": "sceKernelReferAlarmStatus",
+     "addr": 61220
+    },
+    {
+     "nid": "DB738F35",
+     "name": "sceKernelGetSystemTime",
+     "addr": 68576
+    },
+    {
+     "nid": "DF52098F",
+     "name": "sceKernelTryReceiveMsgPipe",
+     "addr": 42904
+    },
+    {
+     "nid": "E1619D7C",
+     "name": "sceKernelSysClock2USecWide",
+     "addr": 68400
+    },
+    {
+     "nid": "E7282CB6",
+     "name": "sceKernelAllocateFplCB",
+     "addr": 51528
+    },
+    {
+     "nid": "E81CAF8F",
+     "name": "sceKernelCreateCallback",
+     "addr": 6616
+    },
+    {
+     "nid": "E9B3061E",
+     "name": "sceKernelSendMbx",
+     "addr": 35004
+    },
+    {
+     "nid": "EA748E31",
+     "name": "sceKernelChangeCurrentThreadAttr",
+     "addr": 82696
+    },
+    {
+     "nid": "EC0A693F",
+     "name": "sceKernelAllocateVplCB",
+     "addr": 47068
+    },
+    {
+     "nid": "ED1410E0",
+     "name": "sceKernelDeleteFpl",
+     "addr": 51244
+    },
+    {
+     "nid": "EDBA5844",
+     "name": "sceKernelDeleteCallback",
+     "addr": 7040
+    },
+    {
+     "nid": "EF9E4C70",
+     "name": "sceKernelDeleteEventFlag",
+     "addr": 21164
+    },
+    {
+     "nid": "F0B7DA1C",
+     "name": "sceKernelDeleteMsgPipe",
+     "addr": 38588
+    },
+    {
+     "nid": "F3986382",
+     "name": "sceKernelReceiveMbxCB",
+     "addr": 35440
+    },
+    {
+     "nid": "F475845D",
+     "name": "sceKernelStartThread",
+     "addr": 79132
+    },
+    {
+     "nid": "F6414A71",
+     "name": "sceKernelFreeFpl",
+     "addr": 52668
+    },
+    {
+     "nid": "F8170FBE",
+     "name": "sceKernelDeleteMutex",
+     "addr": 25840
+    },
+    {
+     "nid": "FB6425C3",
+     "name": "sceKernelSetVTimerTimeWide",
+     "addr": 64332
+    },
+    {
+     "nid": "FBFA697D",
+     "name": "sceKernelReceiveMsgPipeCB",
+     "addr": 41388
+    },
+    {
+     "nid": "FCCFAD26",
+     "name": "sceKernelCancelWakeupThread",
+     "addr": 12824
+    },
+    {
+     "nid": "FFC36A14",
+     "name": "sceKernelReferThreadRunStatus",
+     "addr": 89936
+    }
+   ]
+  },
+  {
+   "name": "ThreadManForKernel",
+   "funcs": [
+    {
+     "nid": "034A921F",
+     "name": "sceKernelGetVTimerTime",
+     "addr": 62844
+    },
+    {
+     "nid": "04E72261",
+     "name": "sceKernelAllocateKTLS",
+     "addr": 72228
+    },
+    {
+     "nid": "0C106E53",
+     "name": "sceKernelRegisterThreadEventHandler",
+     "addr": 4416
+    },
+    {
+     "nid": "0D81716A",
+     "name": "sceKernelPollMbx",
+     "addr": 36288
+    },
+    {
+     "nid": "0DDCD2C9",
+     "name": "sceKernelTryLockMutex",
+     "addr": 28244
+    },
+    {
+     "nid": "110DEC9A",
+     "name": "sceKernelUSec2SysClock",
+     "addr": 60596
+    },
+    {
+     "nid": "1181E963",
+     "name": "sceKernelDelaySysClockThreadCB",
+     "addr": 16292
+    },
+    {
+     "nid": "17C1684E",
+     "name": "sceKernelReferThreadStatus",
+     "addr": 89092
+    },
+    {
+     "nid": "18260574",
+     "name": "sceKernelReceiveMbx",
+     "addr": 35432
+    },
+    {
+     "nid": "1AF94D03",
+     "name": "sceKernelDonateWakeupThread",
+     "addr": 13116
+    },
+    {
+     "nid": "1D371B8A",
+     "name": "sceKernelCancelVpl",
+     "addr": 48892
+    },
+    {
+     "nid": "1FB15A32",
+     "name": "sceKernelSetEventFlag",
+     "addr": 21440
+    },
+    {
+     "nid": "20FFF560",
+     "name": "sceKernelCreateVTimer",
+     "addr": 61636
+    },
+    {
+     "nid": "278C0DF5",
+     "name": "sceKernelWaitThreadEnd",
+     "addr": 15040
+    },
+    {
+     "nid": "27E22EC2",
+     "name": "sceKernelResumeDispatchThread",
+     "addr": 82496
+    },
+    {
+     "nid": "28B6489C",
+     "name": "sceKernelDeleteSema",
+     "addr": 17348
+    },
+    {
+     "nid": "293B45B8",
+     "name": "sceKernelGetThreadId",
+     "addr": 93612
+    },
+    {
+     "nid": "2A3D44FF",
+     "name": "sceKernelGetCallbackCount",
+     "addr": 8056
+    },
+    {
+     "nid": "2C34E053",
+     "name": "sceKernelReleaseWaitThread",
+     "addr": 85024
+    },
+    {
+     "nid": "2D69D086",
+     "name": "sceKernelReferThreadDebugStatus",
+     "addr": 90604
+    },
+    {
+     "nid": "30FD48F0",
+     "name": "sceKernelPollEventFlag",
+     "addr": 23408
+    },
+    {
+     "nid": "328C546A",
+     "name": "sceKernelWaitEventFlagCB",
+     "addr": 22328
+    },
+    {
+     "nid": "328F9E52",
+     "name": "sceKernelDeleteVTimer",
+     "addr": 61908
+    },
+    {
+     "nid": "33BE4024",
+     "name": "sceKernelReferMsgPipeStatus",
+     "addr": 44496
+    },
+    {
+     "nid": "349B864D",
+     "name": "sceKernelCancelMsgPipe",
+     "addr": 44064
+    },
+    {
+     "nid": "349D6D6C",
+     "name": "sceKernelCheckCallback",
+     "addr": 8312
+    },
+    {
+     "nid": "369ED59D",
+     "name": "sceKernelGetSystemTimeLow",
+     "addr": 68904
+    },
+    {
+     "nid": "369EEB6B",
+     "name": "sceKernelReferThreadEventHandlerStatus",
+     "addr": 6144
+    },
+    {
+     "nid": "383F7BCC",
+     "name": "sceKernelTerminateDeleteThread",
+     "addr": 81208
+    },
+    {
+     "nid": "39810265",
+     "name": "sceKernelReferVplStatus",
+     "addr": 49204
+    },
+    {
+     "nid": "3AD58B8C",
+     "name": "sceKernelSuspendDispatchThread",
+     "addr": 81972
+    },
+    {
+     "nid": "3AD875C3",
+     "name": "sceKernelGetThreadKTLS",
+     "addr": 72808
+    },
+    {
+     "nid": "3B183E26",
+     "name": "sceKernelGetThreadExitStatus",
+     "addr": 85520
+    },
+    {
+     "nid": "3F53E640",
+     "name": "sceKernelSignalSema",
+     "addr": 17624
+    },
+    {
+     "nid": "402FCF22",
+     "name": "sceKernelWaitEventFlag",
+     "addr": 22320
+    },
+    {
+     "nid": "446D8DE6",
+     "name": "sceKernelCreateThread",
+     "addr": 77048
+    },
+    {
+     "nid": "4C145944",
+     "name": "sceKernelReferLwMutexStatusByID",
+     "addr": 33472
+    },
+    {
+     "nid": "4E3A1105",
+     "name": "sceKernelWaitSema",
+     "addr": 18252
+    },
+    {
+     "nid": "4FE44D5E",
+     "name": "sceKernelCheckThreadKernelStack",
+     "addr": 94276
+    },
+    {
+     "nid": "52089CA1",
+     "name": "sceKernelGetThreadStackFreeSize",
+     "addr": 88360
+    },
+    {
+     "nid": "53B00E9A",
+     "name": "sceKernelSetVTimerHandlerWide",
+     "addr": 66616
+    },
+    {
+     "nid": "542AD630",
+     "name": "sceKernelSetVTimerTime",
+     "addr": 63604
+    },
+    {
+     "nid": "55C20A00",
+     "name": "sceKernelCreateEventFlag",
+     "addr": 20792
+    },
+    {
+     "nid": "56C039B5",
+     "name": "sceKernelCreateVpl",
+     "addr": 46156
+    },
+    {
+     "nid": "57CF62DD",
+     "name": "sceKernelGetThreadmanIdType",
+     "addr": 92036
+    },
+    {
+     "nid": "58B1F937",
+     "name": "sceKernelPollSema",
+     "addr": 18996
+    },
+    {
+     "nid": "5BF4DD27",
+     "name": "sceKernelLockMutexCB",
+     "addr": 27252
+    },
+    {
+     "nid": "5F32BEAA",
+     "name": "sceKernelReferVTimerStatus",
+     "addr": 67624
+    },
+    {
+     "nid": "616403BA",
+     "name": "sceKernelTerminateThread",
+     "addr": 80832
+    },
+    {
+     "nid": "623AE665",
+     "name": "sceKernelTryAllocateFpl",
+     "addr": 52252
+    },
+    {
+     "nid": "627E6F3A",
+     "name": "sceKernelReferSystemStatus",
+     "addr": 94536
+    },
+    {
+     "nid": "6652B8CA",
+     "name": "sceKernelSetAlarm",
+     "addr": 69108
+    },
+    {
+     "nid": "68DA9E36",
+     "name": "sceKernelDelayThreadCB",
+     "addr": 15744
+    },
+    {
+     "nid": "6B30100F",
+     "name": "sceKernelUnlockMutex",
+     "addr": 26612
+    },
+    {
+     "nid": "6D212BAC",
+     "name": "sceKernelWaitSemaCB",
+     "addr": 18260
+    },
+    {
+     "nid": "71BC9871",
+     "name": "sceKernelChangeThreadPriority",
+     "addr": 84052
+    },
+    {
+     "nid": "721067F3",
+     "name": "sceKernelReferTlsplStatus",
+     "addr": 57916
+    },
+    {
+     "nid": "72F3C145",
+     "name": "sceKernelReleaseThreadEventHandler",
+     "addr": 5180
+    },
+    {
+     "nid": "730ED8BC",
+     "name": "sceKernelReferCallbackStatus",
+     "addr": 9092
+    },
+    {
+     "nid": "74829B76",
+     "name": "sceKernelReceiveMsgPipe",
+     "addr": 41380
+    },
+    {
+     "nid": "75156E8F",
+     "name": "sceKernelResumeThread",
+     "addr": 14224
+    },
+    {
+     "nid": "7C0DC2A0",
+     "name": "sceKernelCreateMsgPipe",
+     "addr": 37992
+    },
+    {
+     "nid": "7C41F2C2",
+     "name": "sceKernelSendMsgPipeCB",
+     "addr": 38872
+    },
+    {
+     "nid": "7E65B999",
+     "name": "sceKernelCancelAlarm",
+     "addr": 60708
+    },
+    {
+     "nid": "809CE29B",
+     "name": "sceKernelExitDeleteThread",
+     "addr": 80580
+    },
+    {
+     "nid": "80CA77BA",
+     "name": "sceKernelRegisterDeadThreadHandler",
+     "addr": 94520
+    },
+    {
+     "nid": "812346E4",
+     "name": "sceKernelClearEventFlag",
+     "addr": 22040
+    },
+    {
+     "nid": "8125221D",
+     "name": "sceKernelCreateMbx",
+     "addr": 34384
+    },
+    {
+     "nid": "82826F70",
+     "name": "sceKernelSleepThreadCB",
+     "addr": 12016
+    },
+    {
+     "nid": "82BC5777",
+     "name": "sceKernelGetSystemTimeWide",
+     "addr": 68760
+    },
+    {
+     "nid": "840E8133",
+     "name": "sceKernelWaitThreadEndCB",
+     "addr": 15048
+    },
+    {
+     "nid": "85A2A5BF",
+     "name": "sceKernelIsUserModeThread",
+     "addr": 93988
+    },
+    {
+     "nid": "86255ADA",
+     "name": "sceKernelDeleteMbx",
+     "addr": 34728
+    },
+    {
+     "nid": "8672E3D0",
+     "name": "ThreadManForKernel_8672E3D0",
+     "addr": 10028
+    },
+    {
+     "nid": "876DBFAD",
+     "name": "sceKernelSendMsgPipe",
+     "addr": 38864
+    },
+    {
+     "nid": "87D4DD36",
+     "name": "sceKernelCancelReceiveMbx",
+     "addr": 36848
+    },
+    {
+     "nid": "87D9223C",
+     "name": "sceKernelCancelMutex",
+     "addr": 28764
+    },
+    {
+     "nid": "884C9F90",
+     "name": "sceKernelTrySendMsgPipe",
+     "addr": 40316
+    },
+    {
+     "nid": "89B3D48C",
+     "name": "sceKernelDeleteVpl",
+     "addr": 46784
+    },
+    {
+     "nid": "8FD9F70C",
+     "name": "sceKernelSuspendAllUserThreads",
+     "addr": 14724
+    },
+    {
+     "nid": "8FFDF9A2",
+     "name": "sceKernelCancelSema",
+     "addr": 19404
+    },
+    {
+     "nid": "912354A7",
+     "name": "sceKernelRotateThreadReadyQueue",
+     "addr": 84540
+    },
+    {
+     "nid": "94416130",
+     "name": "sceKernelGetThreadmanIdList",
+     "addr": 91104
+    },
+    {
+     "nid": "94AA61EE",
+     "name": "sceKernelGetThreadCurrentPriority",
+     "addr": 93732
+    },
+    {
+     "nid": "9944F31F",
+     "name": "sceKernelSuspendThread",
+     "addr": 13692
+    },
+    {
+     "nid": "9ACE131E",
+     "name": "sceKernelSleepThread",
+     "addr": 11760
+    },
+    {
+     "nid": "9FA03CD3",
+     "name": "sceKernelDeleteThread",
+     "addr": 78516
+    },
+    {
+     "nid": "A249EAAE",
+     "name": "sceKernelGetKTLS",
+     "addr": 73544
+    },
+    {
+     "nid": "A66B0120",
+     "name": "sceKernelReferEventFlagStatus",
+     "addr": 24336
+    },
+    {
+     "nid": "A8AA591F",
+     "name": "sceKernelCancelFpl",
+     "addr": 53216
+    },
+    {
+     "nid": "A8E8C846",
+     "name": "sceKernelReferMbxStatus",
+     "addr": 37160
+    },
+    {
+     "nid": "A9C2CB9A",
+     "name": "sceKernelReferMutexStatus",
+     "addr": 29272
+    },
+    {
+     "nid": "AA73C935",
+     "name": "sceKernelExitThread",
+     "addr": 80328
+    },
+    {
+     "nid": "AF36D708",
+     "name": "sceKernelTryAllocateVpl",
+     "addr": 47892
+    },
+    {
+     "nid": "B011B11F",
+     "name": "sceKernelLockMutex",
+     "addr": 27244
+    },
+    {
+     "nid": "B2C25152",
+     "name": "sceKernelSetSysClockAlarm",
+     "addr": 69308
+    },
+    {
+     "nid": "B3A59970",
+     "name": "sceKernelGetVTimerBase",
+     "addr": 62184
+    },
+    {
+     "nid": "B50F4E46",
+     "name": "sceKernelSetThreadmanLogHandler",
+     "addr": 93144
+    },
+    {
+     "nid": "B736E9FF",
+     "name": "sceKernelFreeVpl",
+     "addr": 48308
+    },
+    {
+     "nid": "B7C18B77",
+     "name": "sceKernelGetVTimerBaseWide",
+     "addr": 62544
+    },
+    {
+     "nid": "B7D098C6",
+     "name": "sceKernelCreateMutex",
+     "addr": 25220
+    },
+    {
+     "nid": "BA4051D6",
+     "name": "sceKernelCancelCallback",
+     "addr": 7796
+    },
+    {
+     "nid": "BA6B92E2",
+     "name": "sceKernelSysClock2USec",
+     "addr": 68212
+    },
+    {
+     "nid": "BC31C1B9",
+     "name": "sceKernelExtendKernelStack",
+     "addr": 86720
+    },
+    {
+     "nid": "BC6FEBC5",
+     "name": "sceKernelReferSemaStatus",
+     "addr": 19952
+    },
+    {
+     "nid": "BD123D9E",
+     "name": "sceKernelDelaySysClockThread",
+     "addr": 16284
+    },
+    {
+     "nid": "BED27435",
+     "name": "sceKernelAllocateVpl",
+     "addr": 47060
+    },
+    {
+     "nid": "C07BB470",
+     "name": "sceKernelCreateFpl",
+     "addr": 50184
+    },
+    {
+     "nid": "C0B3FFD2",
+     "name": "sceKernelGetVTimerTimeWide",
+     "addr": 63260
+    },
+    {
+     "nid": "C11BA8C4",
+     "name": "sceKernelNotifyCallback",
+     "addr": 7360
+    },
+    {
+     "nid": "C68D9437",
+     "name": "sceKernelStartVTimer",
+     "addr": 64948
+    },
+    {
+     "nid": "C8CD158C",
+     "name": "sceKernelUSec2SysClockWide",
+     "addr": 68200
+    },
+    {
+     "nid": "C9BBE9A2",
+     "name": "sceKernelGetThreadmanIdOwner",
+     "addr": 92524
+    },
+    {
+     "nid": "CD203292",
+     "name": "sceKernelCancelEventFlag",
+     "addr": 23988
+    },
+    {
+     "nid": "CEADEB47",
+     "name": "sceKernelDelayThread",
+     "addr": 15736
+    },
+    {
+     "nid": "D0AEEE87",
+     "name": "sceKernelStopVTimer",
+     "addr": 65468
+    },
+    {
+     "nid": "D13BDE95",
+     "name": "sceKernelCheckThreadStack",
+     "addr": 88008
+    },
+    {
+     "nid": "D198B811",
+     "name": "sceKernelFreeKTLS",
+     "addr": 72540
+    },
+    {
+     "nid": "D2D615EF",
+     "name": "sceKernelCancelVTimerHandler",
+     "addr": 67256
+    },
+    {
+     "nid": "D366D35A",
+     "name": "ThreadManForKernel_D366D35A",
+     "addr": 92956
+    },
+    {
+     "nid": "D59EAD2F",
+     "name": "sceKernelWakeupThread",
+     "addr": 12368
+    },
+    {
+     "nid": "D6DA4BA1",
+     "name": "sceKernelCreateSema",
+     "addr": 16968
+    },
+    {
+     "nid": "D8199E4C",
+     "name": "sceKernelReferFplStatus",
+     "addr": 53528
+    },
+    {
+     "nid": "D890B370",
+     "name": "sceKernelGetThreadKernelStackFreeSize",
+     "addr": 88716
+    },
+    {
+     "nid": "D8B299AE",
+     "name": "sceKernelSetVTimerHandler",
+     "addr": 65940
+    },
+    {
+     "nid": "D979E9BF",
+     "name": "sceKernelAllocateFpl",
+     "addr": 51520
+    },
+    {
+     "nid": "DAA3F564",
+     "name": "sceKernelReferAlarmStatus",
+     "addr": 61220
+    },
+    {
+     "nid": "DB738F35",
+     "name": "sceKernelGetSystemTime",
+     "addr": 68576
+    },
+    {
+     "nid": "DF52098F",
+     "name": "sceKernelTryReceiveMsgPipe",
+     "addr": 42904
+    },
+    {
+     "nid": "E1619D7C",
+     "name": "sceKernelSysClock2USecWide",
+     "addr": 68400
+    },
+    {
+     "nid": "E7282CB6",
+     "name": "sceKernelAllocateFplCB",
+     "addr": 51528
+    },
+    {
+     "nid": "E81CAF8F",
+     "name": "sceKernelCreateCallback",
+     "addr": 6616
+    },
+    {
+     "nid": "E9B3061E",
+     "name": "sceKernelSendMbx",
+     "addr": 35004
+    },
+    {
+     "nid": "EA748E31",
+     "name": "sceKernelChangeCurrentThreadAttr",
+     "addr": 82696
+    },
+    {
+     "nid": "EC0A693F",
+     "name": "sceKernelAllocateVplCB",
+     "addr": 47068
+    },
+    {
+     "nid": "ED1410E0",
+     "name": "sceKernelDeleteFpl",
+     "addr": 51244
+    },
+    {
+     "nid": "EDBA5844",
+     "name": "sceKernelDeleteCallback",
+     "addr": 7040
+    },
+    {
+     "nid": "EF9E4C70",
+     "name": "sceKernelDeleteEventFlag",
+     "addr": 21164
+    },
+    {
+     "nid": "F0B7DA1C",
+     "name": "sceKernelDeleteMsgPipe",
+     "addr": 38588
+    },
+    {
+     "nid": "F3986382",
+     "name": "sceKernelReceiveMbxCB",
+     "addr": 35440
+    },
+    {
+     "nid": "F475845D",
+     "name": "sceKernelStartThread",
+     "addr": 79132
+    },
+    {
+     "nid": "F6414A71",
+     "name": "sceKernelFreeFpl",
+     "addr": 52668
+    },
+    {
+     "nid": "F6427665",
+     "name": "sceKernelGetUserLevel",
+     "addr": 93852
+    },
+    {
+     "nid": "F8170FBE",
+     "name": "sceKernelDeleteMutex",
+     "addr": 25840
+    },
+    {
+     "nid": "FB6425C3",
+     "name": "sceKernelSetVTimerTimeWide",
+     "addr": 64332
+    },
+    {
+     "nid": "FBFA697D",
+     "name": "sceKernelReceiveMsgPipeCB",
+     "addr": 41388
+    },
+    {
+     "nid": "FCB5EB49",
+     "name": "sceKernelGetSystemStatusFlag",
+     "addr": 94508
+    },
+    {
+     "nid": "FCCFAD26",
+     "name": "sceKernelCancelWakeupThread",
+     "addr": 12824
+    },
+    {
+     "nid": "FFC36A14",
+     "name": "sceKernelReferThreadRunStatus",
+     "addr": 89936
+    }
+   ]
+  }
+ ]
+}

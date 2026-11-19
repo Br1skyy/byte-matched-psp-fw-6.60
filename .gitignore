@@ -1,0 +1,11 @@
+# no sony binaries ever
+*.prx
+*.PBP
+EBOOT
+fw660/
+orig/
+build/
+__pycache__/
+*.o
+*.bin
+*.dis

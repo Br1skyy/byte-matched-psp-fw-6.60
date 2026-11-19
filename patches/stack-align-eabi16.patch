@@ -1,0 +1,10 @@
+--- gcc-3.3.6/gcc/config/mips/mips.h.orig
++++ gcc-3.3.6/gcc/config/mips/mips.h
+@@ -3358,8 +3358,7 @@
+ 
+ #define STACK_BOUNDARY \
+-  ((mips_abi == ABI_32 || mips_abi == ABI_O64 || mips_abi == ABI_EABI) \
++  ((mips_abi == ABI_32 || mips_abi == ABI_O64) \
+    ? 64 : 128)
+
+ /* If defined, the maximum size of memory offset that can be used in a

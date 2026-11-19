@@ -1,0 +1,73 @@
+--- /tmp/regrename.c.orig-vanilla	2026-11-18 06:53:50.690085701 -0800
++++ /home/karin/Downloads/toolchain-build/src/gcc-3.3.6/gcc/regrename.c	2026-11-18 07:27:04.417242416 -0800
+@@ -196,9 +196,23 @@
+   int this_tick = 0;
+   basic_block bb;
+   char *first_obj;
++  int has_calls = 0;
++  rtx scan;
+ 
+   memset (tick, 0, sizeof tick);
+ 
++  /* PSP firmware-merge finding (batch OO): retail code shows the
++     aggressive always-rename behavior only in leaf functions.  In
++     functions containing calls, retail keeps the raw allocator's
++     register choices (the later upstream "prefer current register"
++     behavior).  Select the rule per function.  */
++  for (scan = get_insns (); scan; scan = NEXT_INSN (scan))
++    if (GET_CODE (scan) == CALL_INSN)
++      {
++	has_calls = 1;
++	break;
++      }
++
+   gcc_obstack_init (&rename_obstack);
+   first_obj = (char *) obstack_alloc (&rename_obstack, 0);
+ 
+@@ -236,7 +250,7 @@
+       CLEAR_HARD_REG_SET (regs_seen);
+       while (all_chains)
+ 	{
+-	  int new_reg, best_new_reg = -1;
++	  int new_reg, best_new_reg;
+ 	  int n_uses;
+ 	  struct du_chain *this = all_chains;
+ 	  struct du_chain *tmp, *last;
+@@ -246,6 +260,10 @@
+ 
+ 	  all_chains = this->next_chain;
+ 
++	  /* Leaf function: original behavior (best_new_reg = -1 below);
++	     function with calls: prefer the current register (3.4-style).  */
++	  best_new_reg = has_calls ? reg : -1;
++
+ #if 0 /* This just disables optimization opportunities.  */
+ 	  /* Only rename once we've seen the reg more than once.  */
+ 	  if (! TEST_HARD_REG_BIT (regs_seen, reg))
+@@ -340,6 +358,14 @@
+ 		fprintf (rtl_dump_file, " crosses a call");
+ 	    }
+ 
++	  if (has_calls && best_new_reg == reg)
++	    {
++	      tick[reg] = ++this_tick;
++	      if (rtl_dump_file)
++		fprintf (rtl_dump_file, "; no available better choice\n");
++	      continue;
++	    }
++
+ 	  if (best_new_reg == -1)
+ 	    {
+ 	      if (rtl_dump_file)
+@@ -348,7 +374,10 @@
+ 	    }
+ 
+ 	  do_replace (this, best_new_reg);
+-	  tick[best_new_reg] = this_tick++;
++	  if (has_calls)
++	    tick[best_new_reg] = ++this_tick;
++	  else
++	    tick[best_new_reg] = this_tick++;
+ 
+ 	  if (rtl_dump_file)
+ 	    fprintf (rtl_dump_file, ", renamed as %s\n", reg_names[best_new_reg]);
